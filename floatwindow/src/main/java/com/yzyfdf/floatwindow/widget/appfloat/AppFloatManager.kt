@@ -126,7 +126,9 @@ internal class AppFloatManager(val context: Context, var config: FloatConfig) {
     private fun enterAnim(floatingView: View) {
         if (frameLayout == null) return
 
-        floatingView.visibility = View.VISIBLE
+        if (config.showSelf) {
+            floatingView.visibility = View.VISIBLE
+        }
         windowManager.updateViewLayout(floatingView, params)
     }
 

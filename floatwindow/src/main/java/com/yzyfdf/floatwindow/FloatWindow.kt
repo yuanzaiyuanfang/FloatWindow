@@ -52,7 +52,9 @@ class FloatWindow {
          */
         @JvmStatic
         @JvmOverloads
-        fun appFloatIsShow(tag: String? = null) = getConfig(tag) != null && getConfig(tag)!!.isShow
+        fun appFloatIsShow(tag: String? = null) =
+            (getConfig(tag) != null && getConfig(tag)!!.isShow) ||
+                    FloatManager.getAppFloatManager(tag) != null
 
         /**
          * 获取系统浮窗中，我们传入的View
