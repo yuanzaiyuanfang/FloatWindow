@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FloatWindow</string>
+    <string name="accessibility_service_label">透明壁纸助手</string>
+    <string name="accessibility_service_description">
+        设置透明壁纸：\n
+        1.不要关闭\n
+        2.确认开启\n
+    </string>
+</resources>

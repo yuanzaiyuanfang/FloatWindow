@@ -1,0 +1,1 @@
+-keep class com.yzyfdf.floatwindow.data.** { *; }
